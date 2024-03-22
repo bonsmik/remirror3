@@ -1,12 +1,15 @@
 import './App.css'
 import Editor from './Editor'
+import ErrorBoundary from './ErrorBoundary'
 
 function App() {
 
   return (
     <>
       <h1>Test</h1>
-      <div><Editor/></div>
+      <ErrorBoundary>
+        <div><Editor/></div>
+      </ErrorBoundary>
     </>
   )
 }

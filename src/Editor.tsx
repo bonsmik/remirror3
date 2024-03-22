@@ -4,7 +4,7 @@ import { BoldExtension } from 'remirror/extensions';
 import { Remirror, ThemeProvider, useRemirror } from '@remirror/react';
 import { ToggleBoldButton, Toolbar } from '@remirror/react-ui';
 
-const extensions = () => [new BoldExtension()];
+const extensions = () => [new BoldExtension({})];
 
 const ToggleBold = (): JSX.Element => {
   const { manager, state, onChange } = useRemirror({
